@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bash
+
+# Exit if no installable apps are provided
+if [ -z "${INSTALL_APPS+x}" ]; then
+    echo "**** No apps to install ****"
+    exit 0
+fi
+
+#Split list of packages on delimiter '|'
+IFS='|'
+INSTALL_APPS=(${INSTALL_APPS})
+for APP in "${INSTALL_APPS[@]}"; do
+    proot-apps install "${APP}"
+done
