@@ -13,7 +13,7 @@ env:
   GITHUB_REPO: "throneless-tech/docker-mods" #don't modify
   ENDPOINT: "throneless-tech/docker-mods" #don't modify
   BASEIMAGE: "webtop" #replace
-  MODNAME: "proot" #replace
+  MODNAME: "oxylabs" #replace
   MOD_VERSION: ${{ inputs.mod_version }} #don't modify
   MULTI_ARCH: "false" #set to false if not needed
 
