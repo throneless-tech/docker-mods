@@ -2,7 +2,8 @@
 
 FROM scratch
 
-LABEL maintainer="username"
+LABEL maintainer="jheretic"
+LABEL org.opencontainers.image.source https://github.com/throneless-tech/docker-mods
 
 # copy local files
 COPY root/ /

@@ -11,7 +11,7 @@ on:
 
 env:
   GITHUB_REPO: "throneless-tech/docker-mods" #don't modify
-  ENDPOINT: "throneless-tech/mods" #don't modify
+  ENDPOINT: "throneless-tech/docker-mods" #don't modify
   BASEIMAGE: "webtop" #replace
   MODNAME: "proot" #replace
   MOD_VERSION: ${{ inputs.mod_version }} #don't modify
