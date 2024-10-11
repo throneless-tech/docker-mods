@@ -9,7 +9,6 @@ fi
 #Split list of packages on delimiter '|'
 IFS='|'
 INSTALL_APPS=(${INSTALL_APPS})
-PROOT=$(which proot-apps)
 for APP in "${INSTALL_APPS[@]}"; do
-    $PROOT install "${APP}"
+    $HOME/.local/bin/proot-apps install "${APP}"
 done
