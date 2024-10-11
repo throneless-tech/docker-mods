@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bash
+
+## Ubuntu
+if [ -f /usr/bin/apt ]; then
+    echo "\
+        pwgen \
+        squid \
+        wget \
+        xz-utils" >> /mod-repo-packages-to-install.list
+
+fi
+# Alpine
+if [ -f /sbin/apk ]; then
+    echo "\
+        pwgen \
+		squid \
+		wget \
+        xz" >> /mod-repo-packages-to-install.list
+fi
